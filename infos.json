@@ -1,0 +1,10 @@
+{
+  "displayName" : "Teamviewer",
+  "author" : ["Valentin DEVILLE"],
+  "contributor" : [],
+  "supportedAgent" : ["Windows"],
+  "description" : {
+    "fr" : "Remonte la version et l'id teamviewer",
+    "en" : "Retrieve version and ID of teamviewer"
+  }
+}
