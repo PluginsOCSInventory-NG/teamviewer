@@ -5,7 +5,8 @@ twID = shell.RegRead ("HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TeamViewer\Client
 twVersion = shell.RegRead ("HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TeamViewer\Version")
 
 
-Wscript.Echo "<TEAMVIEWER>"
-Wscript.Echo "<TWID>" & twID & "</TWID>"
-Wscript.Echo "<VERSION>" & twVersion & "</VERSION>"
-Wscript.Echo "</TEAMVIEWER>"
+Wscript.Echo _
+  "<TEAMVIEWER>" & VbCrLf &_
+  "<TWID>" & twID & "</TWID>" & VbCrLf &_
+  "<VERSION>" & twVersion & "</VERSION>" & VbCrLf &_
+  "</TEAMVIEWER>"
