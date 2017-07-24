@@ -13,7 +13,6 @@ Set colItems = objWMIService.ExecQuery( "SELECT * FROM Win32_Processor", , 48 )
 
 For Each objItem in colItems
 	ArchiOS = objItem.AddressWidth
-	
 	If ArchiOS = "32" Then
 		Wow = ""
 	ElseIf ArchiOS = "64" Then
