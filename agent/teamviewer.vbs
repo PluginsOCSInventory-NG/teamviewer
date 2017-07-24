@@ -11,8 +11,6 @@ Set shell = WScript.CreateObject("WScript.Shell")
 Set objWMIService = GetObject( "winmgmts://./root/cimv2" )
 Set colItems = objWMIService.ExecQuery( "SELECT * FROM Win32_Processor", , 48 )
 
-stReg = "HKEY_LOCAL_MACHINE\SOFTWARE\"
-
 For Each objItem in colItems
 	ArchiOS = objItem.AddressWidth
 	
@@ -23,8 +21,12 @@ For Each objItem in colItems
 	End If
 Next
 
-twID = shell.RegRead (stReg & Wow & "TeamViewer\ClientID")
-twVersion = shell.RegRead (stReg & Wow & "TeamViewer\Version")
+stReg = "HKEY_LOCAL_MACHINE\SOFTWARE\" & Wow & "TeamViewer\"
+Check = shell.RegRead(stReg)
+If Err.Number <> 0 Then Wscript.quit
+
+twID = shell.RegRead (stReg & "ClientID")
+twVersion = shell.RegRead (stReg & "Version")
 
 Wscript.Echo _
 	"<TEAMVIEWER>" & VbCrLf &_
