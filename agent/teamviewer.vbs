@@ -1,10 +1,18 @@
 '----------------------------------------------------------
 ' Plugin for OCS Inventory NG 2.x
-' Script : Retrieve Teamviewer ID and version
-' Version : 2.0
-' Date : 22/07/2017
-' Authors : Valentin DEVILLE & Stéphane PAUTREL
+' Script :		Retrieve Teamviewer ID and version
+' Version :		2.00
+' Date :		22/07/2017
+' Authors :		Valentin DEVILLE and Stéphane PAUTREL (acb78.com)
 '----------------------------------------------------------
+' OS checked [X] on	32b	64b	(Professionnal edition)
+'	Windows XP		[ ]	[ ]
+'	Windows 7		[X]	[X]
+'	Windows 8.1		[X]	[X]	
+'	Windows 10		[X]	[X]
+' ---------------------------------------------------------
+' NOTE : No checked on Windows Vista and Windows 8
+' ---------------------------------------------------------
 On Error Resume Next
 
 Set shell = WScript.CreateObject("WScript.Shell")
