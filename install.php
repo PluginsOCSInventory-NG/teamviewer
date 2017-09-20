@@ -2,7 +2,7 @@
 function plugin_version_teamviewer()
 {
 return array('name' => 'teamviewer',
-'version' => '1.0',
+'version' => '1.1',
 'author'=> 'Valentin DEVILLE',
 'license' => 'GPLv2',
 'verMinOcs' => '2.2');
