@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hookstore>
+    <hook type="lang">
+        <value>en_GB</value>
+        <value>fr_FR</value>
+    </hook>
+    <hook type="cdentry">
+        <identifier>cd_teamviewer</identifier>
+        <translation>25000</translation>
+        <category>other</category>
+        <available>teamviewer</available>
+    </hook>
+</hookstore>
