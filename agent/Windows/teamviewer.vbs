@@ -34,6 +34,11 @@ Next
 
 stReg = "HKEY_LOCAL_MACHINE\SOFTWARE\" & Wow & "TeamViewer\"
 Check = shell.RegRead(stReg)
+If Err.Number <> 0 Then 
+	Err.Clear
+	stReg = "HKEY_LOCAL_MACHINE\SOFTWARE\TeamViewer\"
+	Check = shell.RegRead(stReg)
+End If
 If Err.Number <> 0 Then Wscript.quit
 
 twID = shell.RegRead (stReg & "ClientID")
