@@ -33,6 +33,13 @@ if (Test-Path $regPath)
     }
 } 
 
+# just in case
+if($xml -eq $null) {
+	$xml += "<TEAMVIEWER>`n"
+    $xml += "<TWID>" + "No data available in table" + "</TWID>`n"
+    $xml += "<VERSION></VERSION>`n"
+    $xml += "</TEAMVIEWER>`n"
+}
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::WriteLine($xml)
