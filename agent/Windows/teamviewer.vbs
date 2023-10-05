@@ -39,6 +39,10 @@ If Err.Number <> 0 Then Wscript.quit
 twID = shell.RegRead (stReg & "ClientID")
 twVersion = shell.RegRead (stReg & "Version")
 
+If twID = "" AND twVersion = "" Then 
+	twID = "No data available in table"
+End If
+
 Wscript.Echo _
 	"<TEAMVIEWER>" & VbCrLf &_
 	"<TWID>" & twID & "</TWID>" & VbCrLf &_
