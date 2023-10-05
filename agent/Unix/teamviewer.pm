@@ -65,6 +65,11 @@ sub teamviewer_inventory_handler {
      # Suppress unused spaces
      $team_id =~ s/\s+//g;
      $team_version =~ s/\s+//g; 
+     
+
+     if($team_id == "" || $team_id == $null){
+        $team_id = "No data available in table"
+     }
 
      push @{$common->{xmltags}->{TEAMVIEWER}},
      {
