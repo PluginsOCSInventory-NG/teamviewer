@@ -3,7 +3,7 @@
   "author" : ["Valentin DEVILLE"],
   "contributor" : ["Frank BOURDEAU"],
   "supportedAgent" : ["Unix","Windows"],
-  "version" : "2.1",
+  "version" : "2.2",
   "licence" : "GPLv2",
   "description" : {
     "fr" : "Remonte la version et l'id teamviewer",
